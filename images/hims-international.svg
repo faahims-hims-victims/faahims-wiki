@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <title>International Adoption of HIMS-Model Programs</title>
+  <desc>Chart showing countries with HIMS-model aviation programs. Source: National Academies (2023). Licensed under CC-BY-SA 4.0.</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="520" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">International Adoption of HIMS-Model Programs</text>
+  
+  <!-- ===== ORIGIN: USA ===== -->
+  <rect x="300" y="60" width="200" height="70" rx="4" fill="#f0f0f0" stroke="#333333" stroke-width="2"/>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">United States</text>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555555">HIMS Program — est. 1974</text>
+  <text x="400" y="125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333333">ORIGIN</text>
+  
+  <!-- Connector line down -->
+  <line x1="400" y1="130" x2="400" y2="160" stroke="#333333" stroke-width="1.5"/>
+  
+  <!-- Branch lines -->
+  <line x1="200" y1="160" x2="600" y2="160" stroke="#333333" stroke-width="1.5"/>
+  <line x1="200" y1="160" x2="200" y2="180" stroke="#333333" stroke-width="1.5"/>
+  <line x1="400" y1="160" x2="400" y2="180" stroke="#333333" stroke-width="1.5"/>
+  <line x1="600" y1="160" x2="600" y2="180" stroke="#333333" stroke-width="1.5"/>
+  
+  <!-- ===== COLUMN HEADERS ===== -->
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">Formal HIMS Programs</text>
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">Airline Programs</text>
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">CAA Participation</text>
+  
+  <!-- ===== FORMAL HIMS PROGRAMS (Left) ===== -->
+  
+  <rect x="100" y="220" width="200" height="50" rx="3" fill="#f8f8f8" stroke="#555555" stroke-width="1.5"/>
+  <text x="200" y="245" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">Australia</text>
+  <text x="200" y="262" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">HIMS Australia — 2015</text>
+  
+  <rect x="100" y="280" width="200" height="50" rx="3" fill="#f8f8f8" stroke="#555555" stroke-width="1.5"/>
+  <text x="200" y="305" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">New Zealand</text>
+  <text x="200" y="322" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">HIMS NZ — 2017</text>
+  
+  <rect x="100" y="340" width="200" height="50" rx="3" fill="#f8f8f8" stroke="#555555" stroke-width="1.5"/>
+  <text x="200" y="365" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">Hong Kong</text>
+  <text x="200" y="382" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">Cathay Pacific PAN — 2012</text>
+  
+  <!-- ===== AIRLINE PROGRAMS (Center) ===== -->
+  
+  <rect x="300" y="220" width="200" height="50" rx="3" fill="#f8f8f8" stroke="#888888" stroke-width="1"/>
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">Germany</text>
+  <text x="400" y="262" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">Lufthansa Antiskid</text>
+  
+  <rect x="300" y="280" width="200" height="50" rx="3" fill="#f8f8f8" stroke="#888888" stroke-width="1"/>
+  <text x="400" y="305" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">Netherlands</text>
+  <text x="400" y="322" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">KLM Antiskid</text>
+  
+  <rect x="300" y="340" width="200" height="50" rx="3" fill="#f8f8f8" stroke="#888888" stroke-width="1"/>
+  <text x="400" y="365" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#555555">France, Finland</text>
+  <text x="400" y="382" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">Airline-specific programs</text>
+  
+  <!-- ===== CAA PARTICIPATION (Right) ===== -->
+  
+  <rect x="500" y="220" width="200" height="50" rx="3" fill="#f8f8f8" stroke="#aaaaaa" stroke-width="1"/>
+  <text x="600" y="245" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">United Kingdom</text>
+  <text x="600" y="262" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">CAA training participation</text>
+  
+  <!-- ===== KEY NOTE (RED) ===== -->
+  
+  <rect x="100" y="420" width="600" height="50" rx="4" fill="#fff8f8" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="400" y="442" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#c0392b">Note on Outcome Data</text>
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333333">International programs cite U.S. success statistics; country-specific data not independently verified.</text>
+  
+  <!-- Source -->
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#888888">Sources: National Academies (2023); HIMS Australia; HIMS NZ; himsprogram.com</text>
+  
+</svg>

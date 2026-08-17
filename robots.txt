@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faahims.wiki/sitemap.xml

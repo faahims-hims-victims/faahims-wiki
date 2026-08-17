@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400">
+  <title>HIMS Program Timeline (1974–2025)</title>
+  <desc>Timeline of Human Intervention Motivation Study program milestones. Source: National Academies (2023), FAA. Licensed under CC-BY-SA 4.0.</desc>
+  
+  <!-- Background -->
+  <rect width="1000" height="400" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="500" y="35" font-family="Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a1a">HIMS Program Timeline (1974–2025)</text>
+  
+  <!-- Main timeline axis -->
+  <line x1="80" y1="200" x2="920" y2="200" stroke="#333333" stroke-width="3"/>
+  
+  <!-- Axis end caps -->
+  <circle cx="80" cy="200" r="4" fill="#333333"/>
+  <circle cx="920" cy="200" r="4" fill="#333333"/>
+  
+  <!-- ===== 1974 - ABOVE ===== -->
+  <circle cx="120" cy="200" r="6" fill="#333333"/>
+  <line x1="120" y1="194" x2="120" y2="130" stroke="#333333" stroke-width="1.5"/>
+  <text x="120" y="118" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">Program Origin</text>
+  <text x="120" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">NIAAA grant to ALPA</text>
+  <text x="120" y="220" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">1974</text>
+  
+  <!-- ===== 1982 - BELOW ===== -->
+  <circle cx="240" cy="200" r="5" fill="#555555"/>
+  <line x1="240" y1="206" x2="240" y2="260" stroke="#555555" stroke-width="1.5"/>
+  <text x="240" y="278" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">Federal funding ends</text>
+  <text x="240" y="293" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">(~800 pilots returned)</text>
+  <text x="240" y="180" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">1982</text>
+  
+  <!-- ===== 2010 - ABOVE ===== -->
+  <circle cx="420" cy="200" r="5" fill="#555555"/>
+  <line x1="420" y1="194" x2="420" y2="130" stroke="#555555" stroke-width="1.5"/>
+  <text x="420" y="118" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">FAA allows SSRIs;</text>
+  <text x="420" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">HIMS expands to mental health</text>
+  <text x="420" y="220" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">2010</text>
+  
+  <!-- ===== 2018 - BELOW ===== -->
+  <circle cx="560" cy="200" r="5" fill="#555555"/>
+  <line x1="560" y1="206" x2="560" y2="260" stroke="#555555" stroke-width="1.5"/>
+  <text x="560" y="278" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">FAA Reauthorization Act §554</text>
+  <text x="560" y="293" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">Congress mandates NAS review</text>
+  <text x="560" y="180" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">2018</text>
+  
+  <!-- ===== 2020 - ABOVE ===== -->
+  <circle cx="700" cy="200" r="5" fill="#555555"/>
+  <line x1="700" y1="194" x2="700" y2="130" stroke="#555555" stroke-width="1.5"/>
+  <text x="700" y="118" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">FAA implements</text>
+  <text x="700" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">lifetime monitoring policy</text>
+  <text x="700" y="220" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">2020</text>
+  
+  <!-- ===== 2023 - BELOW - KEY FINDING (RED) ===== -->
+  <circle cx="820" cy="200" r="7" fill="#c0392b"/>
+  <line x1="820" y1="206" x2="820" y2="270" stroke="#c0392b" stroke-width="2"/>
+  <text x="820" y="288" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#c0392b">National Academies Report</text>
+  <text x="820" y="305" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#c0392b">"No solid evidence"</text>
+  <text x="820" y="320" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555555">Data not provided</text>
+  <text x="820" y="180" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#c0392b">2023</text>
+  
+  <!-- ===== 2025 - ABOVE ===== -->
+  <circle cx="900" cy="200" r="5" fill="#555555"/>
+  <line x1="900" y1="194" x2="900" y2="145" stroke="#555555" stroke-width="1.5"/>
+  <text x="900" y="133" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">Mental Health in</text>
+  <text x="900" y="115" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">Aviation Act (House)</text>
+  <text x="900" y="220" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">2025</text>
+  
+  <!-- Source -->
+  <text x="500" y="380" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#777777">Sources: National Academies of Sciences (2023); FAA Reauthorization Act of 2018; FAA AME Guide</text>
+  
+</svg>

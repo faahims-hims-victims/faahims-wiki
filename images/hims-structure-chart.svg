@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 850" width="950" height="850">
+  <title>HIMS Program: Stakeholder Structure and Data Flow</title>
+  <desc>Diagram showing HIMS stakeholder relationships and data accountability. Sources: National Academies (2023); Barnard v. Kozarsky, 1:24-cv-03461 (N.D. Ga. 2024). Licensed under CC-BY-SA 4.0.</desc>
+  
+  <!-- Background -->
+  <rect width="950" height="850" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="475" y="38" font-family="Georgia, serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">HIMS Program Structure</text>
+  <text x="475" y="62" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" fill="#444444">Stakeholder Relationships and Data Accountability</text>
+  
+  <!-- ==================== ARROW MARKERS ==================== -->
+  
+  <defs>
+    <marker id="arrowBlackBig" markerWidth="14" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,10 L14,5 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arrowGrayBig" markerWidth="14" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,10 L14,5 z" fill="#666666"/>
+    </marker>
+  </defs>
+  
+  <!-- ==================== CONTROL ARROWS (render behind) ==================== -->
+  
+  <!-- FAA to Pilot -->
+  <path d="M 50 215 C 5 420, 5 580, 350 665" stroke="#1a1a1a" stroke-width="3" fill="none" marker-end="url(#arrowBlackBig)"/>
+  
+  <!-- ALPA to Pilot -->
+  <path d="M 900 215 C 945 420, 945 580, 600 665" stroke="#1a1a1a" stroke-width="3" fill="none" marker-end="url(#arrowBlackBig)"/>
+  
+  <!-- Airlines to Pilot -->
+  <line x1="165" y1="605" x2="355" y2="665" stroke="#1a1a1a" stroke-width="3" marker-end="url(#arrowBlackBig)"/>
+  
+  <!-- HIMS AME to Pilot -->
+  <line x1="785" y1="605" x2="595" y2="665" stroke="#1a1a1a" stroke-width="3" marker-end="url(#arrowBlackBig)"/>
+  
+  <!-- ==================== FAA-ALPA CONNECTION (double line = contract) ==================== -->
+  
+  <line x1="250" y1="162" x2="700" y2="162" stroke="#333333" stroke-width="3"/>
+  <line x1="250" y1="170" x2="700" y2="170" stroke="#333333" stroke-width="3"/>
+  
+  <!-- Connection label -->
+  <rect x="340" y="140" width="270" height="50" rx="5" fill="#f5f5f5" stroke="#333333" stroke-width="2"/>
+  <text x="475" y="162" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#333333">FAA/ALPA CONTRACT</text>
+  <text x="475" y="180" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555555">"FAA owns data; ALPA maintains database"</text>
+  
+  <!-- ==================== FOUR STAKEHOLDER BOXES ==================== -->
+  
+  <!-- FAA Box -->
+  <rect x="45" y="105" width="210" height="145" rx="6" fill="#f5f5f5" stroke="#333333" stroke-width="2.5"/>
+  <text x="150" y="138" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1a1a1a">FAA</text>
+  <text x="150" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Federal Aviation Administration</text>
+  <text x="150" y="182" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555555">"Funds core elements" — NAS 2023</text>
+  <text x="150" y="200" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555555">"Owns the data" — NAS 2023</text>
+  <text x="150" y="220" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#444444" font-weight="bold">"Full access would not be provided"</text>
+  
+  <!-- ALPA Box -->
+  <rect x="695" y="105" width="210" height="145" rx="6" fill="#f5f5f5" stroke="#333333" stroke-width="2.5"/>
+  <text x="800" y="138" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1a1a1a">ALPA</text>
+  <text x="800" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Air Line Pilots Association</text>
+  <text x="800" y="182" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555555">"Maintains HIMS database" — NAS 2023</text>
+  <text x="800" y="200" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555555">"Runs training &amp; himsprogram.com"</text>
+  <text x="800" y="220" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#444444" font-weight="bold">Pilot's union representative</text>
+  
+  <!-- Airlines Box -->
+  <rect x="50" y="485" width="200" height="120" rx="6" fill="#f5f5f5" stroke="#333333" stroke-width="2.5"/>
+  <text x="150" y="520" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1a1a1a">AIRLINES</text>
+  <text x="150" y="545" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Part 121 Carriers</text>
+  <text x="150" y="570" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">"Maintain managerial</text>
+  <text x="150" y="588" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">functions" — NAS 2023</text>
+  
+  <!-- HIMS AMEs Box -->
+  <rect x="700" y="485" width="200" height="120" rx="6" fill="#f5f5f5" stroke="#333333" stroke-width="2.5"/>
+  <text x="800" y="515" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a1a">HIMS AMEs</text>
+  <text x="800" y="540" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Aviation Medical Examiners</text>
+  <text x="800" y="565" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#444444" font-weight="bold">"No doctor-patient</text>
+  <text x="800" y="583" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#444444" font-weight="bold">relationship exists"</text>
+  <text x="800" y="600" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555555">— Barnard v. Kozarsky (2024)</text>
+  
+  <!-- ==================== CENTRAL DATA ELLIPSE ==================== -->
+  
+  <ellipse cx="475" cy="385" rx="90" ry="65" fill="#fafafa" stroke="#666666" stroke-width="2.5" stroke-dasharray="10,5"/>
+  <text x="475" y="365" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333333">OUTCOME</text>
+  <text x="475" y="388" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333333">DATA</text>
+  <text x="475" y="415" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#555555">(not provided to</text>
+  <text x="475" y="432" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#555555">NAS committee)</text>
+  
+  <!-- ==================== DEFLECTION ARROWS WITH BOXES ==================== -->
+  
+  <!-- FAA deflection -->
+  <path d="M 255 175 Q 320 250 400 335" stroke="#666666" stroke-width="2.5" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowGrayBig)"/>
+  <rect x="275" y="242" width="115" height="48" rx="4" fill="#ededed" stroke="#888888" stroke-width="1.5"/>
+  <text x="332" y="262" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">"We don't centrally</text>
+  <text x="332" y="280" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">administer HIMS"</text>
+  
+  <!-- ALPA deflection -->
+  <path d="M 695 175 Q 630 250 550 335" stroke="#666666" stroke-width="2.5" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowGrayBig)"/>
+  <rect x="560" y="242" width="115" height="48" rx="4" fill="#ededed" stroke="#888888" stroke-width="1.5"/>
+  <text x="617" y="262" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">"FAA handles</text>
+  <text x="617" y="280" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">certification"</text>
+  
+  <!-- Airlines deflection -->
+  <path d="M 250 540 Q 320 495 400 435" stroke="#666666" stroke-width="2.5" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowGrayBig)"/>
+  <rect x="275" y="478" width="115" height="48" rx="4" fill="#ededed" stroke="#888888" stroke-width="1.5"/>
+  <text x="332" y="498" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">"We follow union/</text>
+  <text x="332" y="516" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">FAA protocols"</text>
+  
+  <!-- HIMS AME deflection -->
+  <path d="M 700 540 Q 630 495 550 435" stroke="#666666" stroke-width="2.5" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowGrayBig)"/>
+  <rect x="560" y="478" width="115" height="48" rx="4" fill="#ededed" stroke="#888888" stroke-width="1.5"/>
+  <text x="617" y="498" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">"We don't control</text>
+  <text x="617" y="516" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">the database"</text>
+  
+  <!-- ==================== PILOT BOX ==================== -->
+  
+  <rect x="350" y="645" width="250" height="80" rx="6" fill="#f5f5f5" stroke="#333333" stroke-width="2.5"/>
+  <text x="475" y="678" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a1a">PILOT</text>
+  <text x="475" y="702" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">HIMS Participant</text>
+  <text x="475" y="720" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#444444">Subject to oversight from all stakeholders</text>
+  
+  <!-- ==================== BOTTOM FINDING BOX (centered) ==================== -->
+  
+  <rect x="175" y="740" width="600" height="60" rx="6" fill="#f0f0f0" stroke="#444444" stroke-width="2.5"/>
+  <text x="475" y="765" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#333333">NATIONAL ACADEMIES FINDING (2023)</text>
+  <text x="475" y="788" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333333">"Those aggregate data were never delivered." — Committee was "unable to obtain source data"</text>
+  
+  <!-- ==================== LEGEND (centered at bottom) ==================== -->
+  
+  <rect x="300" y="815" width="350" height="28" rx="4" fill="#fafafa" stroke="#cccccc" stroke-width="1"/>
+  
+  <!-- Contract -->
+  <line x1="315" y1="829" x2="340" y2="829" stroke="#333333" stroke-width="2.5"/>
+  <line x1="315" y1="834" x2="340" y2="834" stroke="#333333" stroke-width="2.5"/>
+  <text x="348" y="834" font-family="Arial, sans-serif" font-size="11" fill="#333333">Contract</text>
+  
+  <!-- Deflection -->
+  <line x1="420" y1="831" x2="450" y2="831" stroke="#666666" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <text x="458" y="835" font-family="Arial, sans-serif" font-size="11" fill="#333333">Deflection</text>
+  
+  <!-- Control -->
+  <line x1="540" y1="831" x2="565" y2="831" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrowBlackBig)"/>
+  <text x="575" y="835" font-family="Arial, sans-serif" font-size="11" fill="#333333">Control</text>
+  
+</svg>

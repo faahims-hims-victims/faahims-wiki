@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 500" width="650" height="500">
+  <title>HIMS Treatment Gap</title>
+  <desc>Bar chart showing HIMS participation (1.5%) vs estimated SUD prevalence (13-15%). Source: National Academies (2023). Licensed under CC-BY-SA 4.0.</desc>
+  
+  <!-- Background -->
+  <rect width="650" height="500" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="350" y="35" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">The Treatment Gap</text>
+  <text x="350" y="56" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555555">National Academies of Sciences (2023)</text>
+  
+  <!-- Y-axis -->
+  <line x1="100" y1="80" x2="100" y2="400" stroke="#333333" stroke-width="2"/>
+  
+  <!-- Y-axis label -->
+  <text x="30" y="240" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333" transform="rotate(-90, 30, 240)">Percentage of Pilots</text>
+  
+  <!-- Y-axis: 320px height = 100%, gridlines -->
+  
+  <!-- 100% -->
+  <line x1="95" y1="80" x2="100" y2="80" stroke="#333333" stroke-width="2"/>
+  <text x="88" y="84" font-family="Arial, sans-serif" font-size="11" text-anchor="end" fill="#333333">100%</text>
+  <line x1="100" y1="80" x2="550" y2="80" stroke="#eeeeee" stroke-width="1"/>
+  
+  <!-- 75% -->
+  <line x1="95" y1="160" x2="100" y2="160" stroke="#333333" stroke-width="1"/>
+  <text x="88" y="164" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#666666">75%</text>
+  <line x1="100" y1="160" x2="550" y2="160" stroke="#f5f5f5" stroke-width="1"/>
+  
+  <!-- 50% -->
+  <line x1="95" y1="240" x2="100" y2="240" stroke="#333333" stroke-width="1"/>
+  <text x="88" y="244" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#666666">50%</text>
+  <line x1="100" y1="240" x2="550" y2="240" stroke="#f5f5f5" stroke-width="1"/>
+  
+  <!-- 25% -->
+  <line x1="95" y1="320" x2="100" y2="320" stroke="#333333" stroke-width="1"/>
+  <text x="88" y="324" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#666666">25%</text>
+  <line x1="100" y1="320" x2="550" y2="320" stroke="#f5f5f5" stroke-width="1"/>
+  
+  <!-- 0% -->
+  <line x1="95" y1="400" x2="100" y2="400" stroke="#333333" stroke-width="2"/>
+  <text x="88" y="404" font-family="Arial, sans-serif" font-size="11" text-anchor="end" fill="#333333">0%</text>
+  
+  <!-- X-axis -->
+  <line x1="100" y1="400" x2="550" y2="400" stroke="#333333" stroke-width="2"/>
+  
+  <!-- Scale: 320px = 100%, so 1% = 3.2px -->
+  
+  <!-- Bar 1: HIMS Participation 1.5% = 4.8px -->
+  <rect x="150" y="395.2" width="80" height="4.8" fill="#444444"/>
+  <text x="190" y="388" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">1.5%</text>
+  <text x="190" y="425" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">HIMS</text>
+  <text x="190" y="440" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">Participation</text>
+  
+  <!-- Bar 2: AME Screening 0.5% = 1.6px -->
+  <rect x="280" y="398.4" width="80" height="1.6" fill="#888888"/>
+  <text x="320" y="388" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555555">0.5%</text>
+  <text x="320" y="425" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">AME</text>
+  <text x="320" y="440" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">Detection</text>
+  
+  <!-- Bar 3: Estimated SUD 13-15% -->
+  <!-- 13% = 41.6px, 15% = 48px from bottom -->
+  <rect x="410" y="352" width="80" height="48" fill="#dddddd"/>
+  <rect x="410" y="358.4" width="80" height="41.6" fill="#444444"/>
+  <text x="450" y="345" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">13–15%</text>
+  <text x="450" y="425" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333333">Estimated</text>
+  <text x="450" y="440" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555555">SUD Prevalence</text>
+  
+  <!-- Treatment gap bracket - positioned to right of bars, not overlapping -->
+  <line x1="510" y1="395" x2="510" y2="358" stroke="#c0392b" stroke-width="2"/>
+  <line x1="505" y1="395" x2="515" y2="395" stroke="#c0392b" stroke-width="2"/>
+  <line x1="505" y1="358" x2="515" y2="358" stroke="#c0392b" stroke-width="2"/>
+  
+  <text x="560" y="372" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#c0392b">TREATMENT</text>
+  <text x="560" y="388" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#c0392b">GAP</text>
+  
+  <!-- Bottom note -->
+  <rect x="100" y="458" width="450" height="35" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="325" y="478" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#444444">Gap attributed to "reluctance to disclose conditions</text>
+  <text x="325" y="490" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#444444">due to concerns about career consequences"</text>
+  
+</svg>
