@@ -1,0 +1,21 @@
+/* SITE */
+    Name: FAAHIMS.wiki
+    Purpose: Sourced reference documentation on the FAA Human Intervention
+             Motivation Study (HIMS)
+    Standards: HTML5, CSS3, Schema.org JSON-LD
+    Hosting: GitHub Pages
+    Language: English
+    License: CC BY-SA 4.0
+    Affiliation: None. Not affiliated with the Federal Aviation
+                 Administration or with himsprogram.com.
+
+/* SOURCING */
+    Primary sources: National Academies of Sciences, Engineering, and
+    Medicine; DOT Office of Inspector General; NTSB; Department of Labor
+    ALJ and ARB decisions; federal and state court records; FAA policy
+    memoranda and contract documents; SAMHSA advisories; peer-reviewed
+    literature.
+
+/* CORRECTIONS */
+    Contact: FAAHIMSProgram@pm.me
+    Please cite the section anchor and the authoritative source.

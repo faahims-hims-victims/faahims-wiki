@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://faahims.wiki/</loc><lastmod>2026-08-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
-    <image:image><image:loc>https://faahims.wiki/images/hims-structure-chart.svg</image:loc></image:image>
-    <image:image><image:loc>https://faahims.wiki/images/dot-oig-audit.png</image:loc></image:image>
-    <image:image><image:loc>https://faahims.wiki/images/faa-seal.svg</image:loc></image:image>
-    <image:image><image:loc>https://faahims.wiki/images/faahims-mark-512.png</image:loc></image:image>
-    <image:image><image:loc>https://faahims.wiki/images/faahims-mark.svg</image:loc></image:image>
-    <image:image><image:loc>https://faahims.wiki/images/favicon.svg</image:loc></image:image>
-    <image:image><image:loc>https://faahims.wiki/images/p4hr-logo.png</image:loc></image:image>
-    <image:image><image:loc>https://faahims.wiki/images/fries-ntas-2024-poster.png</image:loc></image:image>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://faahims.wiki/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://faahims.wiki/images/hims-structure-chart.svg</image:loc>
+      <image:title>HIMS program stakeholder structure and data accountability</image:title>
+      <image:caption>Diagram of HIMS program stakeholder relationships and data accountability gaps, based on 2023 National Academies findings.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://faahims.wiki/images/dot-oig-audit.png</image:loc>
+      <image:title>DOT OIG audit announcement, March 19, 2026</image:title>
+      <image:caption>Department of Transportation Office of Inspector General audit announcement memorandum, Project No. 26A3004A000, the first federal oversight audit of the FAA HIMS program.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://faahims.wiki/images/fries-ntas-2024-poster.png</image:loc>
+      <image:title>Fries NTAS 2024 conference poster on extending the HIMS model</image:title>
+      <image:caption>Poster presented at Embry-Riddle Aeronautical University's National Training Aircraft Symposium, February 2024, repeating the unverified 85 percent HIMS success figure.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://faahims.wiki/images/faa-seal.svg</image:loc>
+      <image:title>Seal of the Federal Aviation Administration</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://faahims.wiki/images/p4hr-logo.png</image:loc>
+      <image:title>Pilots for HIMS Reform logo</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://faahims.wiki/images/faahims-mark-512.png</image:loc>
+      <image:title>FAAHIMS.wiki mark</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://faahims.wiki/images/faahims-mark.svg</image:loc>
+      <image:title>FAAHIMS.wiki mark, vector</image:title>
+    </image:image>
   </url>
+
+  <url>
+    <loc>https://faahims.wiki/documents.html</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
