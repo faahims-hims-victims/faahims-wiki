@@ -301,7 +301,10 @@ figure.thumb img{max-width:100%;height:auto;display:block;margin:0 auto}
 figure.thumb figcaption{padding:5px 4px 2px;color:#202122}
 blockquote{border-left:4px solid #c8ccd1;margin:1em 2em;padding:.3em 1em;color:#333}
 blockquote footer{font-size:.9em;color:#54595d}
-table.wikitable{border-collapse:collapse;margin:1em 0;font-size:.9rem}
+table.wikitable{border-collapse:collapse;margin:1.2em 0;font-size:.9rem;width:100%;clear:both;table-layout:auto}
+table.wikitable caption{caption-side:top;text-align:left;padding:0 0 .4em;font-size:.88rem;color:#54595d;font-style:italic}
+table.wikitable th:first-child,table.wikitable td:first-child{width:1%;white-space:nowrap}
+table.wikitable.cmp th:first-child,table.wikitable.cmp td:first-child{white-space:normal}
 table.wikitable th,table.wikitable td{border:1px solid var(--border);padding:5px 10px}
 table.wikitable th{background:#eaecf0}
 sup.ref{font-size:.75em;line-height:0}
@@ -309,7 +312,7 @@ ol.references{font-size:.85rem;column-count:2;column-gap:2.5em;padding-left:1.6e
 ol.references li{margin-bottom:.35em;break-inside:avoid}
 .backlinks{color:#54595d}
 footer.site{border-top:1px solid var(--border);background:var(--soft);padding:22px 20px;font-size:.82rem;color:#54595d;text-align:center;line-height:1.8}
-@media(max-width:760px){.infobox,figure.thumb{float:none;width:100%;margin:1em 0}ol.references{column-count:1}main{padding:12px 14px 40px}}
+@media(max-width:760px){.infobox,figure.thumb{float:none;width:100%;margin:1em 0}ol.references{column-count:1}main{padding:12px 14px 40px}table.wikitable{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:normal}table.wikitable th:first-child,table.wikitable td:first-child{white-space:normal}}
 
 .quotebox{float:right;clear:right;width:300px;margin:.4em 0 1em 1.5em;padding:.9em 1em;
 border:1px solid var(--border);border-left:4px solid var(--accent,#36c);background:var(--soft);
@@ -353,6 +356,38 @@ figure.thumb a img,figure.figwide a img,.ib-img a img{cursor:zoom-in}
 #backtotop{display:none;position:fixed;right:16px;bottom:16px;z-index:90;background:#1a3a5c;color:#dbe8fb;border:1px solid #33506e;border-radius:999px;padding:9px 14px;font-size:.85rem;box-shadow:0 2px 8px rgba(0,0,0,.3)}
 #backtotop:hover{background:#2563eb;text-decoration:none}
 @media print{#searchbar,#backtotop,#netstrip{display:none}}
+/* ---- two-mode search (2026-08-29) ---- */
+#searchwrap{position:-webkit-sticky;position:sticky;top:0;z-index:95;background:#0d1b2a;
+box-shadow:0 2px 6px rgba(0,0,0,.25)}
+#searchbar{position:static;box-shadow:none}
+.srow{display:flex;align-items:center;flex-wrap:wrap;padding:7px 14px 3px}
+.srow.second{padding-top:2px;padding-bottom:8px;border-top:1px solid #1c3category}
+.srow.second{border-top:1px solid #1c3350}
+.slabel{font-size:.68rem;letter-spacing:.6px;text-transform:uppercase;color:#7e93ab;
+width:100%;margin:0 0 3px 2px}
+.slabel b{color:#a5d8ff;font-weight:600;letter-spacing:.4px;text-transform:none;font-size:.78rem}
+.snote{font-size:.72rem;color:#6f8399;margin-left:2px}
+#docsearchbox{flex:1 1 240px;min-width:140px;max-width:520px;padding:7px 12px;font-size:.95rem;
+border:1px solid #33506e;border-radius:6px;background:#122740;color:#e8f1fb;margin-right:8px}
+#docsearchbox::placeholder{color:#7e93ab}
+#docsearchclear{padding:6px 12px;font-size:.85rem;border:1px solid #33506e;border-radius:6px;
+background:#1a3a5c;color:#dbe8fb;cursor:pointer;margin-right:8px}
+#docsearchclear:hover{background:#2563eb}
+#docsearchcount{font-size:.8rem;color:#9fb3c8;min-width:96px}
+#docresults{display:none;max-height:56vh;overflow-y:auto;background:#0b1622;
+border-top:1px solid #1c3350;padding:6px 14px 12px}
+#docresults.on{display:block}
+.dr-doc{margin:10px 0 4px;font-size:.86rem;color:#a5d8ff;font-weight:600}
+.dr-doc .dr-file{font-weight:400;color:#6f8399;font-size:.76rem;margin-left:6px}
+.dr-hit{display:block;padding:5px 9px;margin:3px 0;background:#122740;border-left:3px solid #2563eb;
+border-radius:0 4px 4px 0;font-size:.83rem;color:#c8d8ea;line-height:1.45;text-decoration:none}
+.dr-hit:hover{background:#173252;text-decoration:none}
+.dr-hit .dr-pg{color:#7e93ab;font-size:.74rem;display:block;margin-bottom:2px}
+.dr-hit mark{background:#ffe49c;color:#111;padding:0 1px;border-radius:2px}
+.dr-empty{color:#7e93ab;font-size:.85rem;padding:10px 2px}
+.dr-more{color:#7e93ab;font-size:.78rem;padding:6px 2px 2px}
+@media print{#searchwrap{display:none}}
+@media(max-width:560px){.slabel{font-size:.64rem}#docresults{max-height:50vh}}
 </style>
 </head>
 <body>
@@ -366,16 +401,26 @@ figure.thumb a img,figure.figwide a img,.ib-img a img{cursor:zoom-in}
     <div class="hero-sub">160 sourced citations · National Academies, DOT OIG, NTSB, WSJ, NYT · Updated 2026-08-29</div>
   </div>
 </header>
-<div id="searchbar" role="search">
-<input type="search" id="searchbox" placeholder="Search this page&#8230;" aria-label="Search this page" autocomplete="off">
+<div id="searchwrap">
+<div id="searchbar" class="srow" role="search">
+<div class="slabel"><b>Search this article</b> <span class="snote">&#8212; jumps between matches in the text on this page. Does not search the source documents.</span></div>
+<input type="search" id="searchbox" placeholder="Find in this article&#8230;" aria-label="Find in this article" autocomplete="off">
 <button type="button" id="searchprev" aria-label="Previous match" title="Previous match (Shift+Enter)">&#9650;</button>
 <button type="button" id="searchnext" aria-label="Next match" title="Next match (Enter)">&#9660;</button>
 <button type="button" id="searchclear" aria-label="Clear search" title="Clear (Esc)">&#215;</button>
 <span id="searchcount" aria-live="polite"></span>
 </div>
+<div class="srow second" role="search">
+<div class="slabel"><b>Search the source documents</b> <span class="snote">&#8212; full text of all <span id="dsdocs">26</span> primary source documents in the <a href="/documents.html" style="color:#a5d8ff">public access file</a>, <span id="dspages">469</span> pages. Results link to the page. Index is rebuilt as documents are released or corrected.</span></div>
+<input type="search" id="docsearchbox" placeholder="Search all source documents&#8230;" aria-label="Search all source documents" autocomplete="off">
+<button type="button" id="docsearchclear" aria-label="Clear document search" title="Clear">&#215;</button>
+<span id="docsearchcount" aria-live="polite"></span>
+</div>
+<div id="docresults" aria-live="polite"></div>
+</div>
 <main class="layout">
 <aside class="side">
-<nav id="toc" aria-label="Contents"><h2>Contents</h2><ol><li><a href="#history">History</a></li><ol><li><a href="#key_program_personnel">Key program personnel</a></li><li><a href="#economic_justification_and_coercion_model">Economic justification and coercion model</a></li><li><a href="#program_messaging_and_framing">Program messaging and framing</a></li><li><a href="#continued_unverified_claims">Continued unverified claims</a></li><li><a href="#unverified_statistics_ecosystem">Unverified statistics ecosystem</a></li></ol><li><a href="#program_structure">Program structure</a></li><ol><li><a href="#treatment_facility_selection">Treatment facility selection</a></li><li><a href="#entry_points_and_due_process_concerns">Entry points and due process concerns</a></li><li><a href="#support_and_endorsements">Support and endorsements</a></li><li><a href="#structural_concerns">Structural concerns</a></li><ol><li><a href="#peer_monitoring_and_clinical_decision_making">Peer monitoring and clinical decision-making</a></li><li><a href="#coercive_compliance_and_safety_implications">Coercive compliance and safety implications</a></li><li><a href="#program_documentation">Program documentation</a></li><li><a href="#policy_author_credentials_and_clinical_validation">Policy author credentials and clinical validation</a></li><li><a href="#privacy_protections_and_collective_bargaining">Privacy protections and collective bargaining</a></li></ol></ol><li><a href="#criticism_and_reform_efforts">Criticism and reform efforts</a></li><ol><li><a href="#lack_of_data_transparency">Lack of data transparency</a></li><ol><li><a href="#lack_of_publicly_verifiable_outcome_data">Lack of publicly verifiable outcome data</a></li></ol><li><a href="#national_academies_recommendations">National Academies recommendations</a></li><li><a href="#lifetime_monitoring">Lifetime monitoring</a></li><ol><li><a href="#phase_reset_provision">Phase reset provision</a></li></ol><li><a href="#reliance_on_12_step_treatment">Reliance on 12-step treatment</a></li><li><a href="#allegations_of_program_misuse">Allegations of program misuse</a></li><li><a href="#monitoring_and_privacy">Monitoring and privacy</a></li></ol><li><a href="#program_accountability">Program accountability</a></li><ol><li><a href="#oversight_structure">Oversight structure</a></li><ol><li><a href="#dot_oig_audit_2026">DOT OIG audit (2026)</a></li><li><a href="#public_access_file">Public access file</a></li></ol><li><a href="#complaint_mechanisms">Complaint mechanisms</a></li></ol><li><a href="#testing_protocols_and_cost_burden">Testing protocols and cost burden</a></li><ol><li><a href="#four_hour_testing_window">Four-hour testing window</a></li><li><a href="#samhsa_advisories_on_etg_testing">SAMHSA advisories on EtG testing</a></li><li><a href="#non_fda_approved_testing">Non-FDA approved testing</a></li><li><a href="#peth_testing_reliability">PEth testing reliability</a></li><li><a href="#cost_burden">Cost burden</a></li><li><a href="#fear_of_disclosure">Fear of disclosure</a></li><li><a href="#legislative_reform">Legislative reform</a></li><ol><li><a href="#reform_advocacy_critique">Reform advocacy critique</a></li></ol></ol><li><a href="#legal_cases">Legal cases</a></li><li><a href="#other_controversies">Other controversies</a></li><ol><li><a href="#veterans_affairs_data_sharing">Veterans Affairs data sharing</a></li></ol><li><a href="#international_expansion">International expansion</a></li><ol><li><a href="#hong_kong">Hong Kong</a></li><li><a href="#new_zealand">New Zealand</a></li><li><a href="#australia">Australia</a></li><li><a href="#europe">Europe</a></li></ol><li><a href="#public_discourse">Public discourse</a></li><ol><li><a href="#pilot_led_advocacy">Pilot-led advocacy</a></li></ol><li><a href="#see_also">See also</a></li><li><a href="#references">References</a></li><li><a href="#further_reading">Further reading</a></li><li><a href="#external_links">External links</a></li></ol></nav>
+<nav id="toc" aria-label="Contents"><h2>Contents</h2><ol><li><a href="#history">History</a><ol><li><a href="#key_program_personnel">Key program personnel</a></li><li><a href="#economic_justification_and_coercion_model">Economic justification and coercion model</a></li><li><a href="#program_messaging_and_framing">Program messaging and framing</a></li><li><a href="#continued_unverified_claims">Continued unverified claims</a></li><li><a href="#unverified_statistics_ecosystem">Unverified statistics ecosystem</a></li></ol></li><li><a href="#program_structure">Program structure</a><ol><li><a href="#treatment_facility_selection">Treatment facility selection</a></li><li><a href="#entry_points_and_due_process_concerns">Entry points and due process concerns</a></li><li><a href="#support_and_endorsements">Support and endorsements</a></li><li><a href="#structural_concerns">Structural concerns</a><ol><li><a href="#peer_monitoring_and_clinical_decision_making">Peer monitoring and clinical decision-making</a></li><li><a href="#coercive_compliance_and_safety_implications">Coercive compliance and safety implications</a></li><li><a href="#program_documentation">Program documentation</a></li><li><a href="#policy_author_credentials_and_clinical_validation">Policy author credentials and clinical validation</a></li><li><a href="#privacy_protections_and_collective_bargaining">Privacy protections and collective bargaining</a></li></ol></li></ol></li><li><a href="#criticism_and_reform_efforts">Criticism and reform efforts</a><ol><li><a href="#lack_of_data_transparency">Lack of data transparency</a><ol><li><a href="#lack_of_publicly_verifiable_outcome_data">Lack of publicly verifiable outcome data</a></li></ol></li><li><a href="#national_academies_recommendations">National Academies recommendations</a></li><li><a href="#lifetime_monitoring">Lifetime monitoring</a><ol><li><a href="#phase_reset_provision">Phase reset provision</a></li></ol></li><li><a href="#reliance_on_12_step_treatment">Reliance on 12-step treatment</a></li><li><a href="#allegations_of_program_misuse">Allegations of program misuse</a></li><li><a href="#monitoring_and_privacy">Monitoring and privacy</a></li></ol></li><li><a href="#program_accountability">Program accountability</a><ol><li><a href="#oversight_structure">Oversight structure</a><ol><li><a href="#dot_oig_audit_2026">DOT OIG audit (2026)</a></li><li><a href="#public_access_file">Public access file</a></li></ol></li><li><a href="#complaint_mechanisms">Complaint mechanisms</a></li></ol></li><li><a href="#testing_protocols_and_cost_burden">Testing protocols and cost burden</a><ol><li><a href="#four_hour_testing_window">Four-hour testing window</a></li><li><a href="#samhsa_advisories_on_etg_testing">SAMHSA advisories on EtG testing</a></li><li><a href="#non_fda_approved_testing">Non-FDA approved testing</a></li><li><a href="#peth_testing_reliability">PEth testing reliability</a></li><li><a href="#cost_burden">Cost burden</a></li><li><a href="#fear_of_disclosure">Fear of disclosure</a></li><li><a href="#legislative_reform">Legislative reform</a><ol><li><a href="#reform_advocacy_critique">Reform advocacy critique</a></li></ol></li></ol></li><li><a href="#legal_cases">Legal cases</a></li><li><a href="#other_controversies">Other controversies</a><ol><li><a href="#veterans_affairs_data_sharing">Veterans Affairs data sharing</a></li></ol></li><li><a href="#international_expansion">International expansion</a><ol><li><a href="#hong_kong">Hong Kong</a></li><li><a href="#new_zealand">New Zealand</a></li><li><a href="#australia">Australia</a></li><li><a href="#europe">Europe</a></li></ol></li><li><a href="#public_discourse">Public discourse</a><ol><li><a href="#pilot_led_advocacy">Pilot-led advocacy</a></li></ol></li><li><a href="#see_also">See also</a></li><li><a href="#references">References</a></li><li><a href="#further_reading">Further reading</a></li><li><a href="#external_links">External links</a></li></ol></nav>
 </aside>
 <article>
 <h1>Human Intervention Motivation Study</h1>
@@ -799,6 +844,107 @@ if(box){
 if(nextB){nextB.onclick=function(){if(marks.length){go(cur+1);}else if(box){highlight(box.value);}};}
 if(prevB){prevB.onclick=function(){if(marks.length){go(cur-1);}else if(box){highlight(box.value);}};}
 if(clearB){clearB.onclick=function(){if(box){box.value="";}unwrap();};}
+})();
+/* ---- document full-text search ---- */
+(function(){
+"use strict";
+var box=document.getElementById("docsearchbox"),
+    clr=document.getElementById("docsearchclear"),
+    cnt=document.getElementById("docsearchcount"),
+    pane=document.getElementById("docresults"),
+    idx=null,loading=false,timer=null,
+    MAXDOC=8,MAXHIT=4,CTX=90;
+if(!box||!pane){return;}
+
+function esc(s){return s.replace(/[&<>"]/g,function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+function say(t){if(cnt){cnt.textContent=t;}}
+
+function load(cb){
+  if(idx){cb();return;}
+  if(loading){return;}
+  loading=true;say("Loading index\u2026");
+  var x=new XMLHttpRequest();
+  x.open("GET","/search-index.json",true);
+  x.onreadystatechange=function(){
+    if(x.readyState!==4){return;}
+    loading=false;
+    if(x.status>=200&&x.status<300){
+      try{idx=JSON.parse(x.responseText);say("");cb();}
+      catch(e){say("Index unreadable");}
+    }else{say("Index unavailable");}
+  };
+  x.send();
+}
+
+function snippet(text,q){
+  var lo=text.toLowerCase(),i=lo.indexOf(q);
+  if(i===-1){return null;}
+  var a=Math.max(0,i-CTX),b=Math.min(text.length,i+q.length+CTX);
+  var s=(a>0?"\u2026":"")+text.slice(a,b).replace(/\s+/g," ")+(b<text.length?"\u2026":"");
+  var j=s.toLowerCase().indexOf(q);
+  if(j===-1){return esc(s);}
+  return esc(s.slice(0,j))+"<mark>"+esc(s.slice(j,j+q.length))+"</mark>"+esc(s.slice(j+q.length));
+}
+
+function run(raw){
+  var q=raw.toLowerCase().trim();
+  if(q.length<3){pane.className="";pane.innerHTML="";say(q.length?"3+ characters":"");return;}
+  load(function(){
+    if(!idx){return;}
+    var out=[],total=0,shownDocs=0;
+    for(var d=0;d<idx.docs.length;d++){
+      var doc=idx.docs[d],hits=[];
+      for(var p=0;p<doc.pages.length;p++){
+        var pg=doc.pages[p];
+        if(pg.t.toLowerCase().indexOf(q)!==-1){
+          total++;
+          if(hits.length<MAXHIT){hits.push(pg);}
+        }
+      }
+      if(!hits.length){continue;}
+      shownDocs++;
+      if(shownDocs>MAXDOC){continue;}
+      var h='<div class="dr-doc">'+esc(doc.ti)+
+            '<span class="dr-file">'+esc(doc.f)+'</span></div>';
+      for(var k=0;k<hits.length;k++){
+        var sn=snippet(hits[k].t,q)||"";
+        h+='<a class="dr-hit" href="/docs/paf/'+doc.f+'#page='+hits[k].n+'" target="_blank" rel="noopener">'+
+           '<span class="dr-pg">page '+hits[k].n+' of '+doc.pg+'</span>'+sn+'</a>';
+      }
+      out.push(h);
+    }
+    if(!total){
+      pane.innerHTML='<div class="dr-empty">No matches in the source documents.</div>';
+      pane.className="on";say("0 matches");return;
+    }
+    var extra="";
+    if(shownDocs>MAXDOC){extra='<div class="dr-more">'+(shownDocs-MAXDOC)+' further document(s) also match.</div>';}
+    pane.innerHTML=out.join("")+extra;
+    pane.className="on";
+    say(total+" match"+(total===1?"":"es")+" in "+shownDocs+" doc"+(shownDocs===1?"":"s"));
+  });
+}
+
+box.oninput=function(){
+  if(timer){clearTimeout(timer);}
+  var v=box.value;
+  timer=setTimeout(function(){run(v);},280);
+};
+box.onkeydown=function(e){
+  e=e||window.event;
+  var k=e.keyCode||e.which;
+  if(k===13){if(e.preventDefault){e.preventDefault();}run(box.value);return false;}
+  if(k===27){box.value="";pane.className="";pane.innerHTML="";say("");}
+};
+if(clr){clr.onclick=function(){box.value="";pane.className="";pane.innerHTML="";say("");box.focus();};}
+document.addEventListener("click",function(e){
+  if(!pane.className){return;}
+  var n=e.target;
+  while(n){if(n.id==="searchwrap"){return;}n=n.parentNode;}
+  pane.className="";
+},false);
 })();
 </script>
 </body>
