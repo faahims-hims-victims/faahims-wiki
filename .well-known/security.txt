@@ -1,0 +1,11 @@
+# FAAHIMS.wiki security and corrections contact
+# https://securitytxt.org/
+
+Contact: mailto:FAAHIMSProgram@pm.me
+Expires: 2027-08-29T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://faahims.wiki/.well-known/security.txt
+
+# Corrections to article content, sourcing, or citations are welcome at
+# the same address. Please include the section anchor and the source you
+# believe is authoritative.
