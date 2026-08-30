@@ -1,0 +1,75 @@
+name: IndexNow
+
+# Notifies Bing, Yandex, Seznam and Naver when a page changes.
+# Google ignores IndexNow and discovers changes through the sitemap instead.
+#
+# The key is deliberately not a secret: IndexNow requires it to be publicly
+# readable at https://faahims.wiki/<key>.txt, which is what proves ownership.
+# If the key file is ever renamed, update KEY below to match.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'documents.html'
+  workflow_dispatch:
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit changed pages to IndexNow
+        env:
+          KEY: dfa70ac5c57c492f804df5ce133a4ec7
+        run: |
+          set -euo pipefail
+
+          # GitHub Pages needs a moment to publish before the crawlers arrive
+          sleep 60
+
+          # Refuse to submit if the key file is not serving correctly —
+          # a mismatched key silently fails validation at the endpoint.
+          served=$(curl -fsS --max-time 30 "https://faahims.wiki/${KEY}.txt" || true)
+          if [ "$served" != "$KEY" ]; then
+            echo "::error::Key file mismatch. Expected '${KEY}', got '${served}'."
+            echo "Check that https://faahims.wiki/${KEY}.txt exists and contains exactly the key."
+            exit 1
+          fi
+          echo "Key file verified."
+
+          payload=$(cat <<JSON
+          {
+            "host": "faahims.wiki",
+            "key": "${KEY}",
+            "keyLocation": "https://faahims.wiki/${KEY}.txt",
+            "urlList": [
+              "https://faahims.wiki/",
+              "https://faahims.wiki/documents.html"
+            ]
+          }
+          JSON
+          )
+
+          fail=0
+          for endpoint in \
+            "https://api.indexnow.org/indexnow" \
+            "https://www.bing.com/indexnow" \
+            "https://yandex.com/indexnow"
+          do
+            code=$(curl -s -o /dev/null -w '%{http_code}' \
+                   -X POST "$endpoint" \
+                   -H "Content-Type: application/json; charset=utf-8" \
+                   --max-time 45 \
+                   -d "$payload" || echo "000")
+            case "$code" in
+              200|202) echo "  $code  $endpoint" ;;
+              *)       echo "::warning::$code from $endpoint"; fail=1 ;;
+            esac
+          done
+
+          # One endpoint refusing is not worth failing the run; the shared
+          # endpoint fans out to the others anyway.
+          if [ "$fail" -eq 1 ]; then
+            echo "At least one endpoint did not accept. See warnings above."
+          fi
