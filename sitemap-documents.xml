@@ -1,42 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  faahims.wiki document sitemap
+  faahims.wiki document archive sitemap
 
-  26 verified documents from the National Academies public access file,
-  project DBASSE-BBCSS-22-01. All have extractable text layers and are
+  80 documents, 1,130 pages, all with extractable text layers and
   indexed for on-site full-text search at /search-index.json.
-
-  The committee-supplied portion of the release is not mirrored: the files
-  delivered under those names do not match their contents. See
-  documents.html for the detail.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url><loc>https://faahims.wiki/docs/paf/afa-study-report-2014.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/cabin-crew-wellbeing-report-2022.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-2017-fall-report.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-2018-annual-report.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-2019-annual-report.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-2020-annual-report.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-2021-annual-report.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-2022-annual-report.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-best-practice-manual.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-checklist-fa-entering-sud-treatment-2021.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-discharge-call-points-2019.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-discharge-relapse-form.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-flight-attendant-follow-up-survey.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-post-treatment-survey.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-primary-treatment-summary-form-3.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-return-on-investment.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-survey-form-2.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-third-quarter-option-yr1-2021-2022.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/fadap-treatment-center-evaluation-form.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/frey-liccardo-fadap-2013-conference-slides.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/hims-2021-advanced-topics-seminar-slides.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/hims-rfi-response-snyder.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/mclellan-nas-presentation-2022.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/nas-fadap-evaluation-questions.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/umss-research-fadap-advisory-board-2016.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://faahims.wiki/docs/paf/volkow-nas-presentation-2022.pdf</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/afa-study-report-2014.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/alpa-air-line-pilot-hims-april-2004.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/alpa-de-identified-last-chance-agreement.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/alpa-de-identified-recovery-contract-2021.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/alpa-guidelines-hims-chairman-2012.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/alpa-guidelines-hims-monitor-2012.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/alpa-house-appropriations-testimony-2009.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/braun-petition-for-writ-of-mandamus-2024.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/cabin-crew-wellbeing-report-2022.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/danford-delta-alpa-arbitration-award-18-14-2021.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/dot-oig-hims-audit-announcement-2026.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/erwin-v-faa-dc-circuit-2021.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-14-cfr-67-mental-standards.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-alcohol-status-report-for-ame.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-alpa-hims-agreement-693KA9-20-H-00004-2020.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-berry-2009-legal-interpretation.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-certification-aid-hims-drug-alcohol-initial.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-da-event-certification-aid-required-information.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-da-monitoring-hims-faqs-2026.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-drug-alcohol-monitoring-recertification-aid.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-drug-use-disposition-table.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-dui-dwi-alcohol-incidents-disposition-table.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-giovanetti-letter-to-hims-stakeholders-2020.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-guidance-hims-airmen-furlough.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-ame-change-request.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-ame-directory-2026.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-ame-huddle-case-submission-faqs.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-ame-step-down-plan-2021.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-da-monitoring-initial-certification.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-drug-alcohol-monitoring-checklist.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-pilot-step-down-plan-2023.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-sources-sought-rfi-2025.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-step-down-plan-implementation-2020.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-step-down-plan-package-2020.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-step-down-transition-info.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-hims-step-down-transition-supplement-2023.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-mental-health-arc-final-report-2024.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-neuropsychologists.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-order-2150-3b-compliance.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-ssri-decision-path.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/faa-substance-abuse-dependence-faq.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-2017-fall-report.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-2018-annual-report.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-2019-annual-report.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-2020-annual-report.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-2021-annual-report.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-2022-annual-report.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-best-practice-manual.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-checklist-fa-entering-sud-treatment-2021.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-discharge-call-points-2019.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-discharge-relapse-form.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-flight-attendant-follow-up-survey.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-post-treatment-survey.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-primary-treatment-summary-form-3.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-return-on-investment.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-survey-form-2.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-third-quarter-option-yr1-2021-2022.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/fadap-treatment-center-evaluation-form.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/frey-liccardo-fadap-2013-conference-slides.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-2021-advanced-topics-seminar-slides.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-australia-letter-to-australian-pilots.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-biomarkers.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-canadian-entry.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-dui-checklist.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-family-handbook-2025.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-medication-guide-safe-recovery.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-milestones-timelines-sample-case.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-milestones-timelines-sample-cases-c.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-post-special-issuance-process-diagram-2019.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-pre-special-issuance-process-diagram-2019.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/hims-rfi-response-snyder.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/himsprogram-com-hims-page.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/mclellan-nas-presentation-2022.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/nas-fadap-evaluation-questions.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/ntsb-park-petition-decision-2024.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/petitt-v-delta-alj-decision-2020.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/petitt-v-delta-arb-order-of-remand-2022.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/solondz-v-faa-dc-circuit-2025.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/umss-research-fadap-advisory-board-2016.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://faahims.wiki/docs/paf/volkow-nas-presentation-2022.pdf</loc><lastmod>2026-08-30</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
 
 </urlset>
