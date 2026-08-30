@@ -63,7 +63,12 @@
    "@id": "https://faahims.wiki/#org",
    "name": "FAA HIMS Program Wiki",
    "url": "https://faahims.wiki/",
-   "logo": "https://faahims.wiki/images/faahims-mark-512.png",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://faahims.wiki/images/faahims-mark-512.png",
+    "width": 512,
+    "height": 512
+   },
    "description": "Independent reference project documenting the FAA Human Intervention Motivation Study. Not affiliated with the Federal Aviation Administration or himsprogram.com.",
    "contactPoint": {
     "@type": "ContactPoint",
@@ -71,7 +76,10 @@
     "email": "FAAHIMSProgram@pm.me",
     "availableLanguage": "English"
    },
-   "alternateName": "FAAHIMS.wiki"
+   "alternateName": "FAAHIMS.wiki",
+   "sameAs": [
+    "https://github.com/faahims-hims-victims/faahims-wiki"
+   ]
   },
   {
    "@type": "Article",
@@ -81,8 +89,10 @@
    "alternativeHeadline": "FAA HIMS Program",
    "description": "The Human Intervention Motivation Study (HIMS) is the FAA program that evaluates, monitors, and recertifies pilots with substance use or mental health histories. History, structure, costs, oversight, criticism, and reform efforts, with 165 sourced citations.",
    "image": [
-    "https://faahims.wiki/images/social-card.png",
-    "https://faahims.wiki/images/faahims-mark-512.png"
+    "https://faahims.wiki/images/social-card-16x9.png",
+    "https://faahims.wiki/images/social-card-4x3.png",
+    "https://faahims.wiki/images/social-card-1x1.png",
+    "https://faahims.wiki/images/social-card.png"
    ],
    "author": {
     "@id": "https://faahims.wiki/#org"
@@ -90,8 +100,8 @@
    "publisher": {
     "@id": "https://faahims.wiki/#org"
    },
-   "datePublished": "2026-03-01",
-   "dateModified": "2026-08-30",
+   "datePublished": "2026-03-01T00:00:00+00:00",
+   "dateModified": "2026-08-30T00:00:00+00:00",
    "isPartOf": {
     "@id": "https://faahims.wiki/#website"
    },
@@ -158,7 +168,8 @@
     "Program accountability",
     "Testing protocols",
     "Legal cases"
-   ]
+   ],
+   "wordCount": 28000
   },
   {
    "@type": "Dataset",
@@ -171,9 +182,7 @@
    "description": "A full-text searchable archive of 80 documents, 1,130 pages, on the FAA Human Intervention Motivation Study. Comprises the FAA's Other Transaction Agreement 693KA9-20-H-00004 with the Air Line Pilots Association; materials submitted to the National Academies study committee for project DBASSE-BBCSS-22-01, including the HIMS programme manager's written response and the 2021 Advanced Topics Seminar slide deck; four successive versions of the FAA Step Down Plan; the FAA Guide for Aviation Medical Examiners certification and monitoring instruments; operational documents published by the programme; and federal audit, court and rulemaking records.",
    "identifier": "DBASSE-BBCSS-22-01",
    "creator": {
-    "@type": "Organization",
-    "name": "National Academies of Sciences, Engineering, and Medicine",
-    "url": "https://www.nationalacademies.org/"
+    "@id": "https://faahims.wiki/#org"
    },
    "isAccessibleForFree": true,
    "url": "https://faahims.wiki/documents.html",
@@ -185,7 +194,34 @@
     "@type": "DataDownload",
     "encodingFormat": "application/json",
     "contentUrl": "https://faahims.wiki/search-index.json"
-   }
+   },
+   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "keywords": [
+    "FAA HIMS program",
+    "Human Intervention Motivation Study",
+    "aviation medicine",
+    "pilot medical certification",
+    "substance use disorder",
+    "FADAP",
+    "National Academies",
+    "public access file",
+    "primary sources",
+    "FOIA"
+   ],
+   "datePublished": "2026-03-01T00:00:00+00:00",
+   "dateModified": "2026-08-30T00:00:00+00:00",
+   "version": "2026-08-30",
+   "temporalCoverage": "1974/2026",
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "United States"
+   },
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "FAA HIMS Program Wiki document archive",
+    "url": "https://faahims.wiki/documents.html"
+   },
+   "measurementTechnique": "Optical character recognition and page-level full-text indexing"
   },
   {
    "@type": "FAQPage",
