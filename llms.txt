@@ -43,7 +43,7 @@ and contract documents; SAMHSA advisories; and peer-reviewed literature.
 ## Pages
 
 - [Human Intervention Motivation Study — main article](https://faahims.wiki/): Full reference article covering history, program structure, entry points and due process, peer monitoring, testing protocols and cost burden, oversight, litigation, international adoption, and reform efforts.
-- [Primary source documents](https://faahims.wiki/documents.html): Mirror and index of program records released through the National Academies public access file for study DBASSE-BBCSS-22-01, including the HIMS program manager's written answers to the committee and the 2021 Advanced Topics Seminar slide deck.
+- [Primary source documents](https://faahims.wiki/documents.html): A full-text searchable archive of 80 documents, 1,130 pages. Includes the FAA's Other Transaction Agreement with the Air Line Pilots Association, the programme's own submissions to the congressionally mandated National Academies study, four successive versions of the FAA Step Down Plan, the operational documents governing participating pilots, and federal audit, court and rulemaking records.
 
 ## Related
 
