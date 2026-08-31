@@ -1056,59 +1056,90 @@ function load(cb){
   x.send();
 }
 
-function snippet(text,q){
-  var lo=text.toLowerCase(),i=lo.indexOf(q);
-  if(i===-1){return null;}
-  var a=Math.max(0,i-CTX),b=Math.min(text.length,i+q.length+CTX);
+function hi(s,toks){
+  var lo=s.toLowerCase(),out="",i=0,L=s.length;
+  while(i<L){
+    var m=0;
+    for(var t=0;t<toks.length;t++){
+      var tk=toks[t];
+      if(tk&&lo.slice(i,i+tk.length)===tk){m=tk.length;break;}
+    }
+    if(m){out+="<mark>"+esc(s.slice(i,i+m))+"</mark>";i+=m;}
+    else{out+=esc(s.charAt(i));i++;}
+  }
+  return out;
+}
+
+function snippet(text,toks){
+  var lo=text.toLowerCase(),anchor=-1,alen=0;
+  for(var i=0;i<toks.length;i++){
+    var p=lo.indexOf(toks[i]);
+    if(p!==-1&&(anchor===-1||p<anchor)){anchor=p;alen=toks[i].length;}
+  }
+  if(anchor===-1){return null;}
+  var a=Math.max(0,anchor-CTX),b=Math.min(text.length,anchor+alen+CTX);
   var s=(a>0?"\u2026":"")+text.slice(a,b).replace(/\s+/g," ")+(b<text.length?"\u2026":"");
-  var j=s.toLowerCase().indexOf(q);
-  if(j===-1){return esc(s);}
-  return esc(s.slice(0,j))+"<mark>"+esc(s.slice(j,j+q.length))+"</mark>"+esc(s.slice(j+q.length));
+  return hi(s,toks);
 }
 
 function run(raw){
   var q=raw.toLowerCase().trim();
   if(q.length<3){pane.className="";pane.innerHTML="";say(q.length?"3+ characters":"");return;}
+  var toks=[],parts=q.split(/\s+/);
+  for(var pi=0;pi<parts.length;pi++){
+    var w=parts[pi].replace(/^[^0-9a-z]+|[^0-9a-z]+$/g,"");
+    if(w&&toks.indexOf(w)===-1){toks.push(w);}
+  }
+  if(!toks.length){pane.className="";pane.innerHTML="";say("");return;}
+  var htoks=toks.slice().sort(function(a,b){return b.length-a.length;});
   load(function(){
     if(!idx){return;}
-    var out=[],total=0,shownDocs=0;
+    var out=[],docsMatched=0;
     for(var d=0;d<idx.docs.length;d++){
-      var doc=idx.docs[d],hits=[];
+      var doc=idx.docs[d],present=[],scored=[],t;
+      for(t=0;t<toks.length;t++){present[t]=false;}
       for(var p=0;p<doc.pages.length;p++){
-        var pg=doc.pages[p];
-        if(pg.t.toLowerCase().indexOf(q)!==-1){
-          total++;
-          if(hits.length<MAXHIT){hits.push(pg);}
+        var pg=doc.pages[p],lo=pg.t.toLowerCase(),c=0;
+        for(t=0;t<toks.length;t++){
+          if(lo.indexOf(toks[t])!==-1){c++;present[t]=true;}
         }
+        if(c>0){scored.push({page:pg,score:c});}
       }
-      if(!hits.length){continue;}
-      shownDocs++;
-      if(shownDocs>MAXDOC){continue;}
+      var all=true;
+      for(t=0;t<toks.length;t++){if(!present[t]){all=false;break;}}
+      if(!all){continue;}
+      docsMatched++;
+      if(docsMatched>MAXDOC){continue;}
+      scored.sort(function(a,b){return (b.score-a.score)||(safeInt(a.page.n)-safeInt(b.page.n));});
       var h='<div class="dr-doc">'+esc(doc.ti)+
             '<span class="dr-file">'+esc(safeFile(doc.f)||doc.f)+'</span></div>';
-      for(var k=0;k<hits.length;k++){
-        var sn=snippet(hits[k].t,q)||"";
-        var fsafe=safeFile(doc.f), pn=safeInt(hits[k].n), tot=safeInt(doc.pg);
+      var shown=0;
+      for(var k=0;k<scored.length&&shown<MAXHIT;k++){
+        var page=scored[k].page;
+        var sn=snippet(page.t,htoks)||"";
+        var fsafe=safeFile(doc.f), pn=safeInt(page.n), tot=safeInt(doc.pg);
         if(!fsafe){continue;}
         /* #search= is honoured by PDF.js (Firefox) and the Adobe plugin, and
-           ignored harmlessly by PDFium (Chrome/Edge) and PDFKit (Safari).
-           Strip characters that are meaningless to a PDF text search first. */
-        var pq=encodeURIComponent(String(q).replace(/[#&?"'<>]/g,"").slice(0,80));
+           ignored harmlessly by PDFium (Chrome/Edge) and PDFKit (Safari). The
+           terms may be on different pages, so a phrase search would highlight
+           nothing; hand the viewer the single longest term. */
+        var pq=encodeURIComponent((htoks[0]||"").replace(/[#&?"'<>]/g,"").slice(0,80));
         h+='<a class="dr-hit" href="/docs/paf/'+encodeURIComponent(fsafe)+'#page='+pn+
-           (pq?'&search='+pq+'&phrase=true':'')+'" target="_blank" rel="noopener noreferrer">'+
+           (pq?'&search='+pq:'')+'" target="_blank" rel="noopener noreferrer">'+
            '<span class="dr-pg">page '+pn+' of '+tot+'</span>'+sn+'</a>';
+        shown++;
       }
       out.push(h);
     }
-    if(!total){
+    if(!docsMatched){
       pane.innerHTML='<div class="dr-empty">No matches in the source documents.</div>';
       pane.className="on";say("0 matches");return;
     }
     var extra="";
-    if(shownDocs>MAXDOC){extra='<div class="dr-more">'+safeInt(shownDocs-MAXDOC)+' further document(s) also match.</div>';}
+    if(docsMatched>MAXDOC){extra='<div class="dr-more">'+safeInt(docsMatched-MAXDOC)+' further document(s) also match.</div>';}
     pane.innerHTML=out.join("")+extra;
     pane.className="on";
-    say(total+" match"+(total===1?"":"es")+" in "+shownDocs+" doc"+(shownDocs===1?"":"s"));
+    say(docsMatched+" document"+(docsMatched===1?"":"s")+" match"+(docsMatched===1?"es":""));
   });
 }
 
