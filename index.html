@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAA HIMS Program - Human Intervention Motivation Study (HIMS)</title>
+<title>FAA HIMS Program - Human Intervention Motivation Study (HIMS) | FAA HIMS Wiki</title>
 <meta name="description" content="The FAA's Human Intervention Motivation Study (HIMS): pilot evaluation, monitoring, recertification, costs, oversight, and reform. 165 sourced citations.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-<meta name="author" content="FAAHIMS.wiki">
+<meta name="author" content="FAA HIMS.wiki">
     <link rel="canonical" href="https://faahims.wiki/">
 <link rel="alternate" hreflang="en" href="https://faahims.wiki/">
 <link rel="alternate" hreflang="x-default" href="https://faahims.wiki/">
@@ -22,7 +22,7 @@
 <meta name="theme-color" content="#0d1b2a">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="FAAHIMS Wiki">
+<meta property="og:site_name" content="FAA HIMS Wiki">
 <meta property="og:title" content="FAA HIMS Program - Human Intervention Motivation Study (HIMS)">
 <meta property="og:description" content="The FAA's Human Intervention Motivation Study (HIMS): pilot evaluation, monitoring, recertification, costs, oversight, and reform. 165 sourced citations.">
 <meta property="og:url" content="https://faahims.wiki/">
@@ -47,7 +47,7 @@
    "@type": "WebSite",
    "@id": "https://faahims.wiki/#website",
    "url": "https://faahims.wiki/",
-   "name": "FAAHIMS Wiki",
+   "name": "FAA HIMS Wiki",
    "alternateName": [
     "FAA HIMS Wiki",
     "FAA HIMS Program Wiki"
@@ -61,7 +61,7 @@
   {
    "@type": "Organization",
    "@id": "https://faahims.wiki/#org",
-   "name": "FAAHIMS Wiki",
+   "name": "FAA HIMS Wiki",
    "url": "https://faahims.wiki/",
    "logo": {
     "@type": "ImageObject",
@@ -189,7 +189,7 @@
    "sameAs": "https://www.nationalacademies.org/projects/DBASSE-BBCSS-22-01",
    "citation": [
     "National Academies of Sciences, Engineering, and Medicine (2023). Substance Misuse Programs in Commercial Aviation: Safety First. Washington, DC: The National Academies Press. https://nap.nationalacademies.org/catalog/27025/substance-misuse-programs-in-commercial-aviation-safety-first",
-    "Human Intervention Motivation Study (HIMS). FAAHIMS Wiki. https://faahims.wiki/"
+    "Human Intervention Motivation Study (HIMS). FAA HIMS Wiki. https://faahims.wiki/"
    ],
    "distribution": {
     "@type": "DataDownload",
@@ -219,7 +219,7 @@
    },
    "includedInDataCatalog": {
     "@type": "DataCatalog",
-    "name": "FAAHIMS Wiki document archive",
+    "name": "FAA HIMS Wiki document archive",
     "url": "https://faahims.wiki/documents.html"
    },
    "measurementTechnique": "Optical character recognition and page-level full-text indexing"
@@ -311,7 +311,7 @@
     {
      "@type": "ListItem",
      "position": 1,
-     "name": "FAAHIMS Wiki",
+     "name": "FAA HIMS Wiki",
      "item": "https://faahims.wiki/"
     }
    ]
@@ -488,7 +488,7 @@ border-radius:0 4px 4px 0;font-size:.83rem;color:#c8d8ea;line-height:1.45;text-d
 <span id="searchcount" aria-live="polite"></span>
 </div>
 <div class="srow second" role="search">
-<div class="slabel"><b>Search the source documents</b> <span class="snote">&#8212; full text of all <span id="dsdocs">80</span> primary source documents in the <a href="/documents.html" style="color:#a5d8ff">document archive</a>, <span id="dspages">1130</span> pages. Results link to the page. Index is rebuilt as documents are released or corrected.</span></div>
+<div class="slabel"><b>Search the source documents</b> <span class="snote">&#8212; full text of all <span id="dsdocs">80</span> primary source documents in the <a href="/documents.html" style="color:#a5d8ff">document archive</a>, <span id="dspages">1130</span> pages. Results link to the page. Index is rebuilt as documents are released or corrected. Search tips: all words are required; use "quotes" for an exact phrase, or -word to exclude.</span></div>
 <input type="search" id="docsearchbox" placeholder="Search all source documents&#8230;" aria-label="Search all source documents" autocomplete="off">
 <button type="button" id="docsearchclear" aria-label="Clear document search" title="Clear">&#215;</button>
 <span id="docsearchcount" aria-live="polite"></span>
@@ -1056,6 +1056,8 @@ function load(cb){
   x.send();
 }
 
+function uniq(a){var o=[],i;for(i=0;i<a.length;i++){if(o.indexOf(a[i])===-1){o.push(a[i]);}}return o;}
+
 function hi(s,toks){
   var lo=s.toLowerCase(),out="",i=0,L=s.length;
   while(i<L){
@@ -1070,43 +1072,69 @@ function hi(s,toks){
   return out;
 }
 
-function snippet(text,toks){
+function snippet(text,anchors,needles){
   var lo=text.toLowerCase(),anchor=-1,alen=0;
-  for(var i=0;i<toks.length;i++){
-    var p=lo.indexOf(toks[i]);
-    if(p!==-1&&(anchor===-1||p<anchor)){anchor=p;alen=toks[i].length;}
+  for(var i=0;i<anchors.length;i++){
+    var p=lo.indexOf(anchors[i]);
+    if(p!==-1&&(anchor===-1||p<anchor)){anchor=p;alen=anchors[i].length;}
   }
   if(anchor===-1){return null;}
   var a=Math.max(0,anchor-CTX),b=Math.min(text.length,anchor+alen+CTX);
   var s=(a>0?"\u2026":"")+text.slice(a,b).replace(/\s+/g," ")+(b<text.length?"\u2026":"");
-  return hi(s,toks);
+  return hi(s,needles);
 }
 
 function run(raw){
-  var q=raw.toLowerCase().trim();
-  if(q.length<3){pane.className="";pane.innerHTML="";say(q.length?"3+ characters":"");return;}
-  var toks=[],parts=q.split(/\s+/);
-  for(var pi=0;pi<parts.length;pi++){
-    var w=parts[pi].replace(/^[^0-9a-z]+|[^0-9a-z]+$/g,"");
-    if(w&&toks.indexOf(w)===-1){toks.push(w);}
+  var q=raw.toLowerCase(),qt=q.trim();
+  if(qt.length<3){pane.className="";pane.innerHTML="";say(qt.length?"3+ characters":"");return;}
+  /* Operators: "quoted phrase" matches those words in order; a leading - on a
+     word or a "phrase" excludes it; a leading + is accepted and treated as a
+     normal required word (every term is already required). Anything else is a
+     required word. Unbalanced quotes fall back to plain words. */
+  var reqW=[],reqP=[],negW=[],negP=[],re=/(-?)"([^"]*)"|(\S+)/g,mm;
+  while((mm=re.exec(q))){
+    if(mm[2]!==undefined){
+      var ph=mm[2].replace(/\s+/g," ").replace(/^ | $/g,"");
+      if(ph){(mm[1]==="-"?negP:reqP).push(ph);}
+    }else{
+      var w=mm[3],ng=false;
+      if(w.charAt(0)==="-"){ng=true;w=w.slice(1);}
+      else if(w.charAt(0)==="+"){w=w.slice(1);}
+      w=w.replace(/^[^0-9a-z]+|[^0-9a-z]+$/g,"");
+      if(w){(ng?negW:reqW).push(w);}
+    }
   }
-  if(!toks.length){pane.className="";pane.innerHTML="";say("");return;}
-  var htoks=toks.slice().sort(function(a,b){return b.length-a.length;});
+  reqW=uniq(reqW);reqP=uniq(reqP);negW=uniq(negW);negP=uniq(negP);
+  if(!reqW.length&&!reqP.length){pane.className="";pane.innerHTML="";say(negW.length||negP.length?"add a term to search":"");return;}
+  var hasP=(reqP.length+negP.length)>0;
+  var needles=[],anchors=[],i,j,ws;
+  for(i=0;i<reqP.length;i++){needles.push(reqP[i]);ws=reqP[i].split(" ");for(j=0;j<ws.length;j++){if(ws[j]){needles.push(ws[j]);anchors.push(ws[j]);}}}
+  for(i=0;i<reqW.length;i++){needles.push(reqW[i]);anchors.push(reqW[i]);}
+  needles=uniq(needles).sort(function(a,b){return b.length-a.length;});
+  anchors=uniq(anchors).sort(function(a,b){return b.length-a.length;});
+  var top=needles.length?needles[0]:"";
   load(function(){
     if(!idx){return;}
     var out=[],docsMatched=0;
     for(var d=0;d<idx.docs.length;d++){
-      var doc=idx.docs[d],present=[],scored=[],t;
-      for(t=0;t<toks.length;t++){present[t]=false;}
-      for(var p=0;p<doc.pages.length;p++){
-        var pg=doc.pages[p],lo=pg.t.toLowerCase(),c=0;
-        for(t=0;t<toks.length;t++){
-          if(lo.indexOf(toks[t])!==-1){c++;present[t]=true;}
-        }
+      var doc=idx.docs[d],presW=[],presP=[],scored=[],excluded=false,t,p,pg,lo,loN,c;
+      for(t=0;t<reqW.length;t++){presW[t]=false;}
+      for(t=0;t<reqP.length;t++){presP[t]=false;}
+      for(p=0;p<doc.pages.length;p++){
+        pg=doc.pages[p];lo=pg.t.toLowerCase();loN=hasP?lo.replace(/\s+/g," "):lo;
+        for(t=0;t<negW.length;t++){if(lo.indexOf(negW[t])!==-1){excluded=true;break;}}
+        if(excluded){break;}
+        for(t=0;t<negP.length;t++){if(loN.indexOf(negP[t])!==-1){excluded=true;break;}}
+        if(excluded){break;}
+        c=0;
+        for(t=0;t<reqW.length;t++){if(lo.indexOf(reqW[t])!==-1){presW[t]=true;c++;}}
+        for(t=0;t<reqP.length;t++){if(loN.indexOf(reqP[t])!==-1){presP[t]=true;c++;}}
         if(c>0){scored.push({page:pg,score:c});}
       }
+      if(excluded){continue;}
       var all=true;
-      for(t=0;t<toks.length;t++){if(!present[t]){all=false;break;}}
+      for(t=0;t<reqW.length;t++){if(!presW[t]){all=false;break;}}
+      if(all){for(t=0;t<reqP.length;t++){if(!presP[t]){all=false;break;}}}
       if(!all){continue;}
       docsMatched++;
       if(docsMatched>MAXDOC){continue;}
@@ -1116,14 +1144,13 @@ function run(raw){
       var shown=0;
       for(var k=0;k<scored.length&&shown<MAXHIT;k++){
         var page=scored[k].page;
-        var sn=snippet(page.t,htoks)||"";
-        var fsafe=safeFile(doc.f), pn=safeInt(page.n), tot=safeInt(doc.pg);
+        var sn=snippet(page.t,anchors,needles)||"";
+        var fsafe=safeFile(doc.f),pn=safeInt(page.n),tot=safeInt(doc.pg);
         if(!fsafe){continue;}
         /* #search= is honoured by PDF.js (Firefox) and the Adobe plugin, and
-           ignored harmlessly by PDFium (Chrome/Edge) and PDFKit (Safari). The
-           terms may be on different pages, so a phrase search would highlight
-           nothing; hand the viewer the single longest term. */
-        var pq=encodeURIComponent((htoks[0]||"").replace(/[#&?"'<>]/g,"").slice(0,80));
+           ignored harmlessly by PDFium (Chrome/Edge) and PDFKit (Safari). Hand
+           the viewer the single longest matched term or phrase. */
+        var pq=encodeURIComponent(String(top).replace(/[#&?"'<>]/g,"").slice(0,80));
         h+='<a class="dr-hit" href="/docs/paf/'+encodeURIComponent(fsafe)+'#page='+pn+
            (pq?'&search='+pq:'')+'" target="_blank" rel="noopener noreferrer">'+
            '<span class="dr-pg">page '+pn+' of '+tot+'</span>'+sn+'</a>';
