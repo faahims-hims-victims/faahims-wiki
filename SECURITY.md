@@ -13,8 +13,8 @@ Please don't open a public issue for a security finding. Anything else — a
 broken link, a formatting problem, a citation that doesn't check out — is
 welcome as a public issue.
 
-Expect a reply within a few days. This is a small project maintained by one
-person, not a staffed security team.
+Expect a reply within a few days. This is a small project maintained by a very 
+small (but dedicated!), number of people; not a staffed security team.
 
 ## What this project is
 
